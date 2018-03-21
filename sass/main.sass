@@ -1,0 +1,179 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #fff
+	margin: 0
+	background-color: #282629
+	height: 100%
+	opacity: .9
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+a
+	text-decoration: none
+	&:link
+		color: #fff
+		border-bottom: none
+	&:visited
+		color: #fff
+	&:hover
+		color: #fff
+		text-decoration: none
+	&:active
+		color: #fff
+		border-bottom: none
+	
+.main-title
+	text-align: center
+	h1
+		margin-top: 40px
+		font-family: robotoLig
+		text-transform: uppercase
+		font-size: 30px
+
+.contacts
+	text-align: center
+	ul
+		margin: 0 auto
+		max-width: 400px
+		padding-left: 0
+		li
+			position: relative
+			width: 100%
+			list-style-type: none
+			margin-top: 10px
+			input
+				width: inherit
+				height: 40px
+				padding-left: 20px
+				background-color: transparent
+				border: 1px solid $blue
+				color: #fff
+			&:after
+				content: '*'
+				position: absolute
+				top: -10px
+				right: -10px
+				color: #fff
+
+.right-side
+	display: flex
+	justify-content: flex-end
+
+.list
+	font-family: robotoLig
+	ul
+		padding-left: 0
+		li
+			margin-bottom: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid $blue
+			display: flex
+			align-items: center
+			justify-content: space-between
+			list-style-type: none
+			.initials
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				border: 1px solid $blue
+				margin-right: 20px
+				background-color: #cccc
+				color: #000
+			.tel
+				margin-left: 5px
+			.between
+				flex-grow: 1
+
+
+.btn
+	display: inline-block
+	margin-top: 30px
+	background-color: transparent
+	border: 1px solid $blue
+	color: $blue
+	text-transform: uppercase
+	padding: 10px 20px
+	border-radius: 5px
+	cursor: pointer
+	margin-bottom: 5px
+
+.btn-sort
+	display: none
+	margin-top: 30px
+	font-size: 12px
+	background-color: transparent
+	border: 1px solid $blue
+	color: $blue
+	text-transform: uppercase
+	padding: 5px 10px
+	border-radius: 5px
+	cursor: pointer
+	
+.btn-remove
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 20px
+	height: 20px
+	border-radius: 5px
+	background-color: $red
+	cursor: pointer
+
+.error
+	font-size: 11px
+	margin: 0 auto
+	max-width: 200px
+	text-align: center
+	background-color: $red
+	opacity: 0
+@import "media" // Всегда в конце
