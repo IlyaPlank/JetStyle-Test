@@ -108,7 +108,7 @@ a
 
 .list
 	font-family: robotoLig
-	ul
+	&__contacts
 		padding-left: 0
 		li
 			margin-bottom: 10px
@@ -127,10 +127,12 @@ a
 				border-radius: 50%
 				border: 1px solid $blue
 				margin-right: 20px
-				background-color: #cccc
+				background-color: #fff
 				color: #000
 			.tel
 				margin-left: 5px
+				&:hover
+					color: $blue
 			.between
 				flex-grow: 1
 
